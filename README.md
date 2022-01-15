@@ -1,2 +1,2 @@
-# Community Website for 
-# IKEA DIY Hacks / UNI PROJECT
+# Community Website for IKEA DIY Hacks
+University Project (Web Engineering II)

@@ -1,0 +1,178 @@
+:root{
+    --hackeagelb: rgb(226, 207, 116);
+    --hackeablue: rgb(112, 146, 190);
+}
+
+.my-navbar{
+    color: black;
+    background-color: rgb(112, 146, 190);
+}
+
+.my-navbar a{
+    color: black;
+}
+
+.my-navbar a:hover{
+    color: rgb(112, 146, 190);
+}
+
+.navbar-sticky-top {
+    z-index: 1000;
+}
+
+.my-second-navbar{
+    background-color:rgb(112, 146, 190);
+}
+
+/* Bootstrap 4 text input with search icon */
+
+.has-search .form-control {
+    padding-left: 2.375rem;
+    border-radius: 30px;
+    width: auto;
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
+
+.icons{
+    filter: invert(100%);
+}
+
+.btn-reg{
+    background-color: whitesmoke !important;
+    color: var(--black) !important;
+}
+
+.btn-reg:hover{
+    background-color: var(--hackeagelb) !important;
+}
+
+.btn-reg:nth-of-type(2){
+    background-color: var(--hackeablue) !important;
+}
+.btn-reg:hover{
+    background-color: var(--hackeagelb) !important;
+}
+
+
+
+.big-container{
+    position: relative;
+}
+
+.inner-container{
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+
+.jumbotron {
+    height: 500px;
+    background-image: url(/personal/pics/diy.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.white-container{
+    width: 100%;
+    background-color: rgb(185, 184, 175);
+    opacity: 80%;
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+}
+
+/**/
+
+.my-card .hack-pic{
+    height: 30vh;
+    object-fit: cover;
+    border-radius: 25px !important; 
+    
+}
+
+.my-card{
+    position: relative;
+    border-radius: 25px !important;
+    
+}
+
+.heart-icon{
+    position: absolute;
+    right: 0;
+    top: 12px;
+    background-color: white;
+}
+
+.heart-toggle{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+
+#searchbar1{
+    display: none;
+}
+
+h5{
+    font-size: 1rem !important;
+}
+
+p{
+    font-size: 0.9rem;
+}
+
+@media (min-width: 768px){
+    .has-search .form-control{
+        width: 330px;
+    }
+
+    .my-featurette-container{
+        margin-top: 80px;
+    }
+
+    #categories, #menu2, #search1{
+        display: none;
+    }
+
+    .gallery-col{
+        flex: 100%;
+        max-width: 100%;
+    }
+
+    #searchbar1{
+        display: inline;
+    }
+
+    h5{
+        font-size: 1.25rem !important;
+    }
+
+    p{
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 992px){
+    .has-search .form-control{
+        width: 560px;
+    }
+
+}
+
+  

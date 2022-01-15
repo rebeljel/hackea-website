@@ -1,0 +1,42 @@
+
+
+POST https://localhost:443/comments/newComment/60e0a84511e825276842a9db
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoidGF0aSIsImlhdCI6MTYyMjExMzIyOCwiZXhwIjoxNjIzNzM1NjQxODYyfQ.vPrQmSj2Rhq5rbt_8e_yDH-qkyfhYC5DjgOnhCpLjNk
+
+{
+    "content" : "Ich habe es bei amazon bestellt.",
+    "user" : "60ddafbf184a1f349884c690"
+ }
+
+###
+
+https://localhost:443/comments/
+Content-Type: application/json
+
+
+###
+https://localhost:443/comments/all/60e0a84511e825276842a9db
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoidGF0aSIsImlhdCI6MTYyMjExMzIyOCwiZXhwIjoxNjIzNzM1NjQxODYyfQ.vPrQmSj2Rhq5rbt_8e_yDH-qkyfhYC5DjgOnhCpLjNk
+
+
+###
+
+https://localhost:443/comments/60e200369a6edd4fb827afb0
+Content-Type: application/json
+
+###
+
+DELETE https://localhost:443/comments/60af8d220dbc2b3d288edb80
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoidGF0aSIsImlhdCI6MTYyMjExMzIyOCwiZXhwIjoxNjIzNzM1NjQxODYyfQ.vPrQmSj2Rhq5rbt_8e_yDH-qkyfhYC5DjgOnhCpLjNk
+
+###
+PUT https://localhost:443/comments/60af8db443b3736430fcdf31
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoidXNlci51c2VySUQiLCJpYXQiOjE2MjA5MDY0NjAsImV4cCI6MTYyMjUyNzY2NjcwNn0.NqJ7OaxfoDcJ-43MKfJZ4gPwbjRUvV4awbdoY5zrBg8
+
+{
+    "content" : "This is the updated comment"
+}

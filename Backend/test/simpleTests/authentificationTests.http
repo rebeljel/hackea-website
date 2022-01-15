@@ -1,0 +1,22 @@
+
+#user tati
+
+POST https://localhost:443/authenticate/login
+Authorization: Basic dGF0aToxMjM=
+
+###
+
+#anmelden als admin, creates default admin if database empty
+POST https://localhost:443/authenticate/login
+Content-Type: application/json
+Authorization: Basic YWRtaW46MTI0
+
+###
+
+POST https://localhost:443/authenticate/loginBody
+Content-Type: application/json
+
+{
+    "userID" : "tati",
+    "password" : "123"
+}

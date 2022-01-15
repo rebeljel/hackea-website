@@ -1,0 +1,33 @@
+POST https://localhost:8080/tags
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiYWRtaW4iLCJpYXQiOjE2MjE5NjE0MDEsImV4cCI6MTYyMzU4MzY2MzM1M30.CUulr6iaGOJxrSzuqn_MVwkcCjp-lzqGMOJc3ywRsX8
+
+{
+    "name" : "Cabinets"
+}
+
+###
+
+https://localhost:8080/tags/
+Content-Type: application/json
+
+
+###
+
+PUT https://localhost:8080/tags/60a787bd11784737d863217c
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiYWRtaW4iLCJpYXQiOjE2MjE5NjE0MDEsImV4cCI6MTYyMzU4MzY2MzM1M30.CUulr6iaGOJxrSzuqn_MVwkcCjp-lzqGMOJc3ywRsX8
+
+{
+    "name" : "Lamps"
+}
+
+###
+
+DELETE https://localhost:8080/tags
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiYWRtaW4iLCJpYXQiOjE2MjE5NjE0MDEsImV4cCI6MTYyMzU4MzY2MzM1M30.CUulr6iaGOJxrSzuqn_MVwkcCjp-lzqGMOJc3ywRsX8
+
+{
+    "name" : "Chairs"
+}

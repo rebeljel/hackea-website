@@ -1,0 +1,42 @@
+POST https://localhost:443/posts/newPost/tati
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoidGF0aSIsImlhdCI6MTYyMjExMzIyOCwiZXhwIjoxNjIzNzM1NjQxODYyfQ.vPrQmSj2Rhq5rbt_8e_yDH-qkyfhYC5DjgOnhCpLjNk
+
+{
+    "title" : "New Post",
+    "content" : "Lorem ipsum and so on"
+}
+
+###
+
+https://localhost:443/posts/
+Content-Type: application/json
+
+
+//one post
+###
+https://localhost:443/posts/60e0a84511e825276842a9db
+Content-Type: application/json
+
+
+###
+https://localhost:443/posts/user/60d9cdd703fc26379c8f7b77
+Content-Type: application/json
+
+###
+
+PUT https://localhost:443/posts/60e1149b45d92d3c94993cc0
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiYWRtaW4iLCJpYXQiOjE2MjE5NjE0MDEsImV4cCI6MTYyMzU4MzY2MzM1M30.CUulr6iaGOJxrSzuqn_MVwkcCjp-lzqGMOJc3ywRsX8
+
+{
+    "title" : "Neuer Post",
+    "content" : "New new new",
+    "tags": ["60a7870b26dddb5190334efc", "60a78a2e5c69f83830ae2b49"]
+}
+
+###
+
+DELETE https://localhost:443/posts/60e0a91c11e825276842a9dc
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiYWRtaW4iLCJpYXQiOjE2MjE5NjE0MDEsImV4cCI6MTYyMzU4MzY2MzM1M30.CUulr6iaGOJxrSzuqn_MVwkcCjp-lzqGMOJc3ywRsX8

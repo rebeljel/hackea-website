@@ -1,0 +1,693 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Font Awesome CSS -->
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+</head>
+  <body>
+    <!--NAV-->
+    <!--Mobile Nav-->
+    <nav class="navbar navbar-expand-md sticky-top navbar-light my-navbar">
+      <!--Logo and Brand-->
+       <!--<a class="navbar-brand my-navbar-brand" href="#">HACKEA</a>-->
+        <a class="navbar-brand" href="/private/index.html">
+          <img src="pics/logo2.png" width="90" height="40" class="d-inline-block align-top" alt="">
+        </a>
+
+        <!--Search Button-->
+        <button class="btn btn-default ml-auto mr-2" type="button" id="search1">
+          <img class="icons" src="pics/icons/lupe.png" width="25" height="25">
+        </button>
+
+        <!--Toggler Button-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-light navbar-toggler-icon">
+          </span>
+        </button>
+        <!--Big Screen Nav-->
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+
+          <!--Kategorien-->
+          <div class="btn-group" style="display: block; margin-top: 2px;">
+            <button class="btn btn-default dropdown-toggle mx-2" type="button" id="menu2" data-toggle="dropdown">
+              <a class="caret">Kategorien</a>
+            </button>
+            <div class="dropdown-menu dropdown-menu-left" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#" >Wohnzimmer</a>
+                <a class="dropdown-item" href="#">Schlafzimmer</a>
+                <a class="dropdown-item" href="#" >Küche</a>
+                <a class="dropdown-item" href="#">Badezimmer</a>
+            </div>
+          </div>
+
+          <!--SEARCH BAR-->
+          <div class="form-group has-search my-2 mx-lg-auto ml-auto" id="searchbar1">
+            <span class="fa fa-search form-control-feedback"></span>
+            <input type="text" class="form-control mr-sm-2" placeholder="Suche nach Ideen...">
+          </div>
+
+          <!--Icons-->
+          <button class="btn btn-default mx-1" type="button" id="notification1">
+            <img class="icons" src="pics/icons/plus.png" width="25" height="25">
+          </button>
+          <button class="btn btn-default mx-1" type="button" id="favorites1">
+            <img class="icons" src="pics/icons/heart.png" width="25" height="25">
+          </button>
+          <button class="btn btn-default mx-1" type="button" id="notification1">
+            <img class="icons" src="pics/icons/notification.png" width="25" height="25">
+          </button>
+
+          <!--PROFIL MENU-->
+          <div class="dropdown" style="display: inline;">
+            <button class="btn btn-default dropdown-toggle mx-2" type="button" id="menu1" data-toggle="dropdown">
+              <img src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/fox.jpg" width="40" height="40" class="rounded-circle">
+              <span class="caret"></span>
+            </button>
+            <div class="dropdown-menu dropdown-menu-left dropdown-menu-md-right my-dropdown-below" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#" >Profil anzeigen</a>
+                <a class="dropdown-item" href="#">Nachrichten</a>
+                <a class="dropdown-item" href="#" >Kontoeinstellungen</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Log Out</a>
+            </div>
+          </div>
+
+      </div>
+    </nav>
+    <!--Second NAV
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+      <div class="collapse navbar-collapse fixed-top bg-light" style="top: 70px; font-size: 13px; z-index: 1000" id="navbarNav">
+        <ul class="navbar-nav mx-auto my-2">
+          <li class="nav-items mx-2">
+            <a class="nav-link" href="#">Wohnzimmer <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link" href="#">Schlafzimmer</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link" href="#">Küche</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link" href="#">Badezimmer</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link" href="#">Homeoffice</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link" href="#">Designer Hacks</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link" href="#">Kinderzimmer</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link" href="#">Designer Hacks</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link" href="#">Haustiere</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link" href="#">Deko & Wohnaccessoires</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link" href="#">Outdoors</a>
+          </li>
+        </ul>
+      </div>
+    </nav>-->
+
+    <!--PROFIL-->
+<div class="container-fluid">
+  <div class="row">
+    <div class="col col-md-3 col-5">
+      <div class="container-fluid my-profile">
+        <div class="avatar-flip">
+          <img src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/fox.jpg" height="100" width="100">
+        </div>
+        <h3>Luisa</h3>
+        <p>@lulu</p>
+        <p>Du folgst: 20</p>
+        <span><b>Follower: 13</b></span>
+      </div>
+    </div>
+    <div class="col col-md-6 col-7">
+      <div class="container my-2">
+        <h3>Über Dich <button class="btn btn-default" type="button">
+          <img src="pics/icons/pen.png" width="20" height="20">
+        </button></h3>
+        <p class="mt-1 text-truncate">Ich bin großer Fan von DIY und liebe es mein Zuhause zu verschönern. Wenn ich ein Möbelstück von IKEA auf der Straße sehe, rette ich es sofort.
+          Ich verarbeite sie zu Stücken, bei denen ich mich von Designermöbel inspirieren lasse, oder nutze die Rohstoffe zur Weiterverarbeitung.
+          Und ich habe noch nie was von IKEA gekauft.
+        </p>
+        <h2 class="pb-2 border-bottom"></h2>
+      </div>
+      <div class="container my-2">
+        <h3>Interessen <button class="btn btn-default" type="button">
+          <img src="pics/icons/pen.png" width="20" height="20">
+        </button></h3>
+        <p class="mt-1">IKEA-Möbel vor dem Schrottplatz retten und aufmöbeln, mit Holz arbeiten</p>
+        <h2 class="pb-2 border-bottom"></h2>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Eigene Beiträge-->
+<div class="container-fluid my-container-cards mx-auto">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col"><h3 class="pb-2">Meine Beiträge</h3></div>
+      <div class="col" style="text-align: right;">
+        <button class="btn btn-default mx-1" type="button">
+          <img src="pics/icons/plus.png" width="25" height="25">
+        </button>
+        <button class="btn btn-default mx-1" type="button">
+          <img src="pics/icons/pen.png" width="25" height="25">
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <h2 class="pb-2 border-bottom"></h2>
+
+  <div class="row justify-content-start" data-masonry='{"percentPosition": true }'>
+    <div class="col-6 col-sm-6 col-md-3 col-lg-2 my-2 p-1">
+      <div class="card my-card">
+        <img class="hack-pic" src="pics/Ivar-mit-Geflecht-in-rosa.jpg">
+        <div class="container container-cards">
+          <div class="d-flex bd-highlight mb-3">
+            <div class="me-auto pt-2 bd-highlight">
+              <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+            </div>
+            <div class="me-auto pt-2 bd-highlight">
+              <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/>
+              </svg>
+              <small>Earth</small>
+            </div>
+            <div class="me-auto pt-2 bd-highlight">
+              <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
+              <small>1d</small>
+            </div>
+           
+          </div>
+          <h5>IVAR-Upcycling mit Wiener Geflecht</h5>
+          <p class="text-truncate">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam accusamus rem dicta minus sapiente molestias culpa, similique, repellat quisquam nihil ipsa! Voluptate debitis totam repellat tenetur? Quis aliquid atque tempore.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 col-sm-6 col-md-3 col-lg-2 my-2 p-1">
+      <div class="card my-card">
+        <img class="hack-pic" src="pics/cart-hacks.jpg">
+        <div class="container">
+          <div class="d-flex bd-highlight mb-3">
+            <div class="me-auto pt-2 bd-highlight">
+              <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+            </div>
+            <div class="me-auto pt-2 bd-highlight">
+              <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/>
+              </svg>
+              <small>Ilya</small>
+            </div>
+            <div class="me-auto pt-2 bd-highlight">
+              <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
+              <small>1d</small>
+            </div>
+          </div>
+          <h5>Küchenwagen als Pflanzengestell</h5>
+          <p class="text-truncate">Lorem ipsum dolor sit am bla bla</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 col-sm-6 col-md-3 col-lg-2 my-2 p-1">
+      <div class="card my-card">
+        <img class="hack-pic" src="pics/hockerhack.jpg">
+        <div class="container">
+          <div class="d-flex bd-highlight mb-3">
+            <div class="me-auto pt-2 bd-highlight">
+              <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+            </div>
+            <div class="me-auto pt-2 bd-highlight">
+              <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/>
+              </svg>
+              <small>Paris</small>
+            </div>
+            <div class="me-auto pt-2 bd-highlight">
+              <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
+              <small>1d</small>
+            </div>
+          </div>
+          <h5>BEKVAM mal anders</h5>
+          <p class="text-truncate">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum magnam officiis et minus minima ratione, similique reiciendis, repellendus magni saepe numquam porro fugit facere nisi, officia aliquam voluptas a perspiciatis.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 col-sm-6 col-md-3 col-lg-2 my-2 p-1">
+      <div class="card my-card">
+        <img class="hack-pic" src="pics/Ikea-Ivar-Hacks-mit-verzierten-T-ren.jpg">
+        <div class="container">
+          <div class="d-flex bd-highlight mb-3">
+            <div class="me-auto pt-2 bd-highlight">
+              <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+            </div>
+            <div class="me-auto pt-2 bd-highlight">
+              <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/>
+              </svg>
+              <small>Pinar</small>
+            </div>
+            <div class="me-auto pt-2 bd-highlight">
+              <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
+              <small>2d</small>
+            </div>
+          </div>
+          <h5>Ivar-Schrank Designer-DIY</h5>
+          <p class="text-truncate">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium officiis labore fuga deserunt ipsa quis laboriosam ipsam non amet temporibus explicabo veniam, aliquam maiores voluptate modi quo optio, quae reiciendis!</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 col-sm-6 col-md-3 col-lg-2 my-2 p-1">
+      <div class="card my-card">
+        <img class="hack-pic" src="pics/enetrihack.png">
+        <div class="container">
+          <div class="d-flex bd-highlight mb-3">
+            <div class="me-auto pt-2 bd-highlight">
+              <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+            </div>
+            <div class="me-auto pt-2 bd-highlight">
+              <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/>
+              </svg>
+              <small>Luisa</small>
+            </div>
+            <div class="me-auto pt-2 bd-highlight">
+              <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
+              <small>4d</small>
+            </div>
+          </div>
+          <h5>Regal Modding</h5>
+          <p class="text-truncate">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas quos minus odit. Architecto omnis amet odio porro sed voluptas eveniet! Blanditiis nobis inventore nihil repellendus harum non? Quis, quibusdam veritatis.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 col-sm-6 col-md-3 col-lg-2 my-2 p-1">
+      <div class="card my-card">
+        <img class="hack-pic" src="pics/Ivar-Schubladenkommode-fuer-das-Arbeitszimmer.jpg">
+        <div class="container">
+          <div class="d-flex bd-highlight mb-3">
+            <div class="me-auto pt-2 bd-highlight">
+              <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+            </div>
+            <div class="me-auto pt-2 bd-highlight">
+              <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/>
+              </svg>
+              <small>Jelena</small>
+            </div>
+            <div class="me-auto pt-2 bd-highlight">
+              <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
+              <small>4d</small>
+            </div>
+          </div>
+          <h5>Home Office Makeover</h5>
+          <p class="text-truncate">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas quos minus odit. Architecto omnis amet odio porro sed voluptas eveniet! Blanditiis nobis inventore nihil repellendus harum non? Quis, quibusdam veritatis.</p>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+<!--Favoriten-->
+
+<div class="container-fluid my-container-cards mx-auto my-2">
+  <h2 class="pb-2 border-bottom">Favoriten</h2>
+  <div class="row justify-content-start" data-masonry='{"percentPosition": true }'>
+
+    <div class="col-6 col-sm-6 col-md-3 col-lg-2 my-2 p-1">
+      <div class="card my-card">
+        <div class="container">  
+          <div class="row my-row">
+           <div class="col-8 grid-pic p-0">
+                <img class="img-responsive grid-pic" src="pics/Ikea-Ivar-Hacks-mit-verzierten-T-ren.jpg" />
+           </div>
+           <div class="col-4 grid-pic p-0">
+               <div class="row">
+                   <div class="col-sm-12">
+                       <img class="img-responsive grid-pic" src="pics/lackhack.jpg" />
+                   </div>
+               </div>
+               <div class="row p-0">
+                   <div class="col-sm-12">
+                       <img class="img-responsive grid-pic" src="pics/t-hacks-4.jpg" />
+                   </div>
+               </div>
+           </div>
+          </div>
+       </div>
+        <div class="container">
+          <div class="d-flex bd-highlight mb-3">
+            <div class="pt-2 bd-highlight">
+            </div>
+          </div>
+          <h5>Möbel Hacks</h5>
+          <p>20 Einträge</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-6 col-sm-6 col-md-3 col-lg-2 my-2 p-1">
+      <div class="card my-card">
+        <div class="container">  
+          <div class="row my-row">
+           <div class="col-8 grid-pic p-0">
+                <img class="img-responsive grid-pic" src="pics/hockerhack.jpg" />
+           </div>
+           <div class="col-4 grid-pic p-0">
+               <div class="row">
+                   <div class="col-sm-12">
+                       <img class="img-responsive grid-pic" src="pics/cart-hacks.jpg" />
+                   </div>
+               </div>
+               <div class="row p-0">
+                   <div class="col-sm-12">
+                       <img class="img-responsive grid-pic" src="pics/decohack.jpg" />
+                   </div>
+               </div>
+           </div>
+          </div>
+       </div>
+        <div class="container">
+          <div class="d-flex bd-highlight mb-3">
+            <div class="pt-2 bd-highlight">
+            </div>
+          </div>
+          <h5>Deko</h5>
+          <p>4 Einträge</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-6 col-sm-6 col-md-3 col-lg-2 my-2 p-1">
+      <div class="card my-card">
+        <div class="container">  
+          <div class="row my-row">
+           <div class="col-8 grid-pic p-0">
+                <img class="img-responsive grid-pic" src="pics/malmhack.jpg">
+           </div>
+           <div class="col-4 grid-pic p-0">
+               <div class="row">
+                   <div class="col-sm-12">
+                       <img class="img-responsive grid-pic" src="pics/Ivar-mit-Geflecht-in-rosa.jpg">
+                   </div>
+               </div>
+               <div class="row p-0">
+                   <div class="col-sm-12">
+                       <img class="img-responsive grid-pic" src="pics/diy.jpg">
+                   </div>
+               </div>
+           </div>
+          </div>
+       </div>
+        <div class="container">
+          <div class="d-flex bd-highlight mb-3">
+            <div class="pt-2 bd-highlight">
+            </div>
+          </div>
+          <h5>Kommoden Ideen</h5>
+          <p>5 Einträge</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid my-container-cards mx-auto my-2">
+  <h2 class="pb-2 border-bottom">Zuletzt besucht</h2>
+  <div class="row justify-content-start" data-masonry='{"percentPosition": true }'>
+    <div class="col-6 col-sm-6 col-md-3 col-lg-2 my-2 p-1">
+      <div class="card my-card">
+        
+        <img class="hack-pic" src="pics/Ivar-mit-Geflecht-in-rosa.jpg">
+        <div class="container container-cards">
+          <div class="d-flex bd-highlight mb-3">
+            <div class="me-auto pt-2 bd-highlight">
+              <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+            </div>
+            <div class="me-auto pt-2 bd-highlight">
+              <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/>
+              </svg>
+              <small>Earth</small>
+            </div>
+            <div class="me-auto pt-2 bd-highlight">
+              <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
+              <small>1d</small>
+            </div>
+            <div class="pt-2 bd-highlight">
+              <button class="btn btn-default mx-1 heart-icon" type="button" id="favorites1">
+                <img class="icons-black" src="pics/icons/heart.png" width="25" height="25">
+              </button>
+            </div>
+          </div>
+          <h5>IVAR-Upcycling mit Wiener Geflecht</h5>
+          <p class="text-truncate">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam accusamus rem dicta minus sapiente molestias culpa, similique, repellat quisquam nihil ipsa! Voluptate debitis totam repellat tenetur? Quis aliquid atque tempore.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 col-sm-6 col-md-3 col-lg-2 my-2 p-1">
+      <div class="card my-card">
+        <img class="hack-pic" src="pics/cart-hacks.jpg">
+        <div class="container">
+          <div class="d-flex bd-highlight mb-3">
+            <div class="me-auto pt-2 bd-highlight">
+              <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+            </div>
+            <div class="me-auto pt-2 bd-highlight">
+              <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/>
+              </svg>
+              <small>Ilya</small>
+            </div>
+            <div class="me-auto pt-2 bd-highlight">
+              <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
+              <small>1d</small>
+            </div>
+            <div class="pt-2 bd-highlight">
+              <button class="btn btn-default mx-1 heart-icon" type="button" id="favorites1">
+                <img class="icons-black" src="pics/icons/heart.png" width="25" height="25">
+              </button>
+            </div>
+          </div>
+          <h5>Küchenwagen als Pflanzengestell</h5>
+          <p class="text-truncate">Lorem ipsum dolor sit am bla bla</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 col-sm-6 col-md-3 col-lg-2 my-2 p-1">
+      <div class="card my-card">
+        <img class="hack-pic" src="pics/hockerhack.jpg">
+        <div class="container">
+          <div class="d-flex bd-highlight mb-3">
+            <div class="me-auto pt-2 bd-highlight">
+              <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+            </div>
+            <div class="me-auto pt-2 bd-highlight">
+              <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/>
+              </svg>
+              <small>Paris</small>
+            </div>
+            <div class="me-auto pt-2 bd-highlight">
+              <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
+              <small>1d</small>
+            </div>
+            <div class="pt-2 bd-highlight">
+              <button class="btn btn-default mx-1 heart-icon" type="button" id="favorites1">
+                <img class="icons-black" src="pics/icons/heart.png" width="25" height="25">
+              </button>
+            </div>
+          </div>
+          <h5>BEKVAM mal anders</h5>
+          <p class="text-truncate">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum magnam officiis et minus minima ratione, similique reiciendis, repellendus magni saepe numquam porro fugit facere nisi, officia aliquam voluptas a perspiciatis.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 col-sm-6 col-md-3 col-lg-2 my-2 p-1">
+      <div class="card my-card">
+        <img class="hack-pic" src="pics/Ikea-Ivar-Hacks-mit-verzierten-T-ren.jpg">
+        <div class="container">
+          <div class="d-flex bd-highlight mb-3">
+            <div class="me-auto pt-2 bd-highlight">
+              <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+            </div>
+            <div class="me-auto pt-2 bd-highlight">
+              <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/>
+              </svg>
+              <small>Pinar</small>
+            </div>
+            <div class="me-auto pt-2 bd-highlight">
+              <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
+              <small>2d</small>
+            </div>
+            <div class="pt-2 bd-highlight">
+              <button class="btn btn-default mx-1 heart-icon" type="button" id="favorites1">
+                <img class="icons-black" src="pics/icons/heart.png" width="25" height="25">
+              </button>
+            </div>
+          </div>
+          <h5>Ivar-Schrank Designer-DIY</h5>
+          <p class="text-truncate">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium officiis labore fuga deserunt ipsa quis laboriosam ipsam non amet temporibus explicabo veniam, aliquam maiores voluptate modi quo optio, quae reiciendis!</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 col-sm-6 col-md-3 col-lg-2 my-2 p-1">
+      <div class="card my-card">
+        <img class="hack-pic" src="pics/enetrihack.png">
+        <div class="container">
+          <div class="d-flex bd-highlight mb-3">
+            <div class="me-auto pt-2 bd-highlight">
+              <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+            </div>
+            <div class="me-auto pt-2 bd-highlight">
+              <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/>
+              </svg>
+              <small>Luisa</small>
+            </div>
+            <div class="me-auto pt-2 bd-highlight">
+              <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
+              <small>4d</small>
+            </div>
+            <div class="pt-2 bd-highlight">
+              <button class="btn btn-default mx-1 heart-icon" type="button" id="favorites1">
+                <img class="icons-black" src="pics/icons/heart.png" width="25" height="25">
+              </button>
+            </div>
+          </div>
+          <h5>Regal Modding</h5>
+          <p class="text-truncate">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas quos minus odit. Architecto omnis amet odio porro sed voluptas eveniet! Blanditiis nobis inventore nihil repellendus harum non? Quis, quibusdam veritatis.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 col-sm-6 col-md-3 col-lg-2 my-2 p-1">
+      <div class="card my-card">
+        <img class="hack-pic" src="pics/Ivar-Schubladenkommode-fuer-das-Arbeitszimmer.jpg">
+        <div class="container">
+          <div class="d-flex bd-highlight mb-3">
+            <div class="me-auto pt-2 bd-highlight">
+              <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+            </div>
+            <div class="me-auto pt-2 bd-highlight">
+              <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/>
+              </svg>
+              <small>Jelena</small>
+            </div>
+            <div class="me-auto pt-2 bd-highlight">
+              <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
+              <small>4d</small>
+            </div>
+            <div class="pt-2 bd-highlight">
+              <button class="btn btn-default mx-1 heart-icon" type="button" id="favorites1">
+                <img class="icons-black" src="pics/icons/heart.png" width="25" height="25">
+              </button>
+            </div>
+          </div>
+          <h5>Home Office Makeover</h5>
+          <p class="text-truncate">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas quos minus odit. Architecto omnis amet odio porro sed voluptas eveniet! Blanditiis nobis inventore nihil repellendus harum non? Quis, quibusdam veritatis.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 col-sm-6 col-md-3 col-lg-2 my-2 p-1">
+      <div class="card my-card">
+        <img class="hack-pic" src="pics/lackhack.jpg">
+        <div class="container">
+          <div class="d-flex bd-highlight mb-3">
+            <div class="me-auto pt-2 bd-highlight">
+              <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+            </div>
+            <div class="me-auto pt-2 bd-highlight">
+              <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/>
+              </svg>
+              <small>Rex</small>
+            </div>
+            <div class="me-auto pt-2 bd-highlight">
+              <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
+              <small>1d</small>
+            </div>
+            <div class="pt-2 bd-highlight">
+              <button class="btn btn-default mx-1 heart-icon" type="button" id="favorites1">
+                <img class="icons-black" src="pics/icons/heart.png" width="25" height="25">
+              </button>
+            </div>
+          </div>
+          <h4>LACK Upcycling mit DIY-Gestellt</h4>
+          <p class="text-truncate">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas quos minus odit. Architecto omnis amet odio porro sed voluptas eveniet! Blanditiis nobis inventore nihil repellendus harum non? Quis, quibusdam veritatis.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 col-sm-6 col-md-3 col-lg-2 my-2 p-1">
+      <div class="card my-card">
+        <img class="hack-pic" src="pics/t-hacks-4.jpg">
+        <div class="container">
+          <div class="d-flex bd-highlight mb-3">
+            <div class="me-auto pt-2 bd-highlight">
+              <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+            </div>
+            <div class="me-auto pt-2 bd-highlight">
+              <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/>
+              </svg>
+              <small>Katze</small>
+            </div>
+            <div class="me-auto pt-2 bd-highlight">
+              <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
+              <small>6d</small>
+            </div>
+            <div class="pt-2 bd-highlight">
+              <button class="btn btn-default mx-1 heart-icon" type="button" id="favorites1">
+                <img class="icons-black" src="pics/icons/heart.png" width="25" height="25">
+              </button>
+            </div>
+          </div>
+          <h5>Neue Arbeitsplatte für IKEA-Küchentheke</h5>
+          <p class="text-truncate">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas quos minus odit. Architecto omnis amet odio porro sed voluptas eveniet! Blanditiis nobis inventore nihil repellendus harum non? Quis, quibusdam veritatis.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 col-sm-6 col-md-3 col-lg-2 my-2 p-1">
+      <div class="card my-card">
+        <img class="hack-pic" src="pics/decohack.jpg">
+        <div class="container">
+          <div class="d-flex bd-highlight mb-3">
+            <div class="me-auto pt-2 bd-highlight">
+              <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+            </div>
+            <div class="me-auto pt-2 bd-highlight">
+              <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/>
+              </svg>
+              <small>Olive</small>
+            </div>
+            <div class="me-auto pt-2 bd-highlight">
+              <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
+              <small>1d</small>
+            </div>
+            <div class="pt-2 bd-highlight">
+              <button class="btn btn-default mx-1 heart-icon" type="button" id="favorites1">
+                <img class="icons-black" src="pics/icons/heart.png" width="25" height="25">
+              </button>
+            </div>
+          </div>
+          <h5>Deko aus IKEA-Resten mit Wiener Geflecht</h5>
+          <p class="text-truncate">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas quos minus odit. Architecto omnis amet odio porro sed voluptas eveniet! Blanditiis nobis inventore nihil repellendus harum non? Quis, quibusdam veritatis.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+  </body>
+</html>

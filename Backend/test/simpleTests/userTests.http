@@ -1,0 +1,83 @@
+#no authentification
+
+https://localhost:443/user
+
+###
+
+#get all users with authentification
+GET https://localhost:443/user
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiYWRtaW4iLCJpYXQiOjE2MjIxMTMyNjMsImV4cCI6MTYyMzczNTY3NjU0OH0.2pQv8p5lxjCMenUfPbXImauAJJ__yvn8CqwF5-yxS0s
+
+###
+
+POST https://localhost:443/user/signup
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiYWRtaW4iLCJpYXQiOjE2MjIxMTMyNjMsImV4cCI6MTYyMzczNTY3NjU0OH0.2pQv8p5lxjCMenUfPbXImauAJJ__yvn8CqwF5-yxS0s
+
+{
+    "userID" : "paul",
+    "userName" : "Paul",
+    "email" : "paul@gmail.com",
+    "password" : "3435"
+}
+
+###
+
+DELETE https://localhost:443/user/delete
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiYWRtaW4iLCJpYXQiOjE2MjIxMTMyNjMsImV4cCI6MTYyMzczNTY3NjU0OH0.2pQv8p5lxjCMenUfPbXImauAJJ__yvn8CqwF5-yxS0s
+
+{
+    "userID" : "susi123"
+}
+
+
+###
+
+#get user by id
+
+https://localhost:443/user/tati
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiYWRtaW4iLCJpYXQiOjE2MjIxMTMyNjMsImV4cCI6MTYyMzczNTY3NjU0OH0.2pQv8p5lxjCMenUfPbXImauAJJ__yvn8CqwF5-yxS0s
+
+###
+
+POST https://localhost:443/user/signup
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiYWRtaW4iLCJpYXQiOjE2MjIwNTQ1MDcsImV4cCI6MTYyMzY3Njg2MjMzNH0.LQBaLUGJEI8DlmaZin7qw6NyAz9Ru8p4GQdMSb9qkPw
+
+{
+    "id" : "224",
+    "userID" : "lulu",
+    "userName" : "Lulu",
+    "email" : "lulu@gmail.com",
+    "password" : "1233"
+}
+
+###
+
+#update as admin, updates and hashes password
+
+PUT https://localhost:443/user/update/didi
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiYWRtaW4iLCJpYXQiOjE2MjIxMTMyNjMsImV4cCI6MTYyMzczNTY3NjU0OH0.2pQv8p5lxjCMenUfPbXImauAJJ__yvn8CqwF5-yxS0s
+
+{
+    "userName" : "Nicky Petricevic",
+    "password" : "124",
+    "email" : "nickyp@gmail.com"
+}
+
+###
+
+#update as user
+PUT https://localhost:443/user/update/tati
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoidGF0aSIsImlhdCI6MTYyMjExMzIyOCwiZXhwIjoxNjIzNzM1NjQxODYyfQ.vPrQmSj2Rhq5rbt_8e_yDH-qkyfhYC5DjgOnhCpLjNk
+
+{
+    "userName" : "Tati",
+    "password" : "123",
+    "email" : "tatimail12@gmail.com"
+    
+}

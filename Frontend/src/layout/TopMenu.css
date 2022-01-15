@@ -1,0 +1,202 @@
+:root{
+    --hackeagelb: rgb(226, 207, 116);
+    --hackeablue: rgb(112, 146, 190);
+}
+
+
+.my-navbar{
+    color: black;
+    background-color: rgb(112, 146, 190);
+    background-color: white;
+}
+
+.my-navbar a{
+    color: black;
+}
+
+.my-navbar a:hover{
+    color: rgb(112, 146, 190);
+}
+
+.navbar-sticky-top {
+    z-index: 1000;
+}
+
+.my-second-navbar{
+    background-color:rgb(112, 146, 190);
+}
+
+/* Bootstrap 4 text input with search icon */
+
+.has-search .form-control {
+    padding-left: 2.375rem;
+    border-radius: 30px;
+    width: auto;
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
+
+.icons{
+    filter: invert(100%);
+}
+
+.btn-reg{
+    background-color: whitesmoke !important;
+    color: var(--black) !important;
+}
+
+.btn-reg:nth-of-type(2){
+    background-color: var(--hackeablue) !important;
+}
+.btn-reg:hover{
+    background-color: var(--hackeagelb) !important;
+}
+
+
+
+
+.icon-container{
+    border-radius: 50%;
+    
+}
+
+/**/
+
+
+
+.my-modal-btn{
+    background-color: var(--hackeablue) !important;
+}
+
+.my-model-a{
+    color: rgba(0,0,0,.5) !important;
+}
+
+.heart-icon{
+    position: absolute;
+    right: 0;
+    top: 12px;
+}
+
+.btn-merken{
+    position: absolute;
+    right: 0;
+    top: 12px;
+}
+
+#searchbar1{
+    display: none;
+}
+
+.container {
+    padding: 2rem 0rem;
+}
+
+.form-group-2{
+    margin-bottom: 0.6rem !important;
+}
+
+
+.modal-header .close{
+    margin-top: -1.5rem;
+}
+  
+.form-title {
+margin: -2rem 0rem 2rem;
+}
+  
+.btn-round {
+    border-radius: 3rem;
+}
+  
+.delimiter {
+    padding: 1rem;  
+}
+  
+.social-buttons .btn{
+    margin: 0 0.5rem 1rem;
+}
+  
+.signup-section { 
+    padding: 0.3rem 0rem;
+}
+
+h2{
+    font-size: 1.5rem !important;
+}
+
+p{
+font-size: 1rem !important;  
+}
+
+.btn-nav{
+    display: block; 
+    margin-top: 2px;
+}
+
+
+
+@media (min-width: 576px){
+    .modal-dialog {
+      max-width: 400px;
+    }
+      
+    .modal-dialog  .modal-content {
+        padding: 1rem;
+    }
+
+    #searchbar1{
+        display: inline;
+        width: 350px;
+    }
+
+}
+
+@media(min-width: 300px){
+    #login1{
+        display: none;
+    }
+
+    #registrieren1{
+        display: none;
+    }
+}
+
+
+@media (min-width: 768px){
+    h2{
+        font-size: 2rem !important;
+    }
+  
+    p{
+      font-size: 1.25rem !important;  
+    }
+
+    .has-search .form-control{
+        width: 330px;
+    }
+
+    #categories, #menu2, #search1{
+        display: none;
+    }
+
+}
+
+@media (min-width: 992px){
+    .has-search .form-control{
+        width: 560px;
+    }
+
+}
+
+  
